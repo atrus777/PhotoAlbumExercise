@@ -1,0 +1,9 @@
+D:\VS2017 Projects\PhotoAlbum\PhotoAlbum\bin\Release\App.config
+D:\VS2017 Projects\PhotoAlbum\PhotoAlbum\bin\Release\PhotoAlbum.exe.config
+D:\VS2017 Projects\PhotoAlbum\PhotoAlbum\bin\Release\PhotoAlbum.exe
+D:\VS2017 Projects\PhotoAlbum\PhotoAlbum\bin\Release\PhotoAlbum.pdb
+D:\VS2017 Projects\PhotoAlbum\PhotoAlbum\bin\Release\Newtonsoft.Json.dll
+D:\VS2017 Projects\PhotoAlbum\PhotoAlbum\bin\Release\System.Configuration.dll
+D:\VS2017 Projects\PhotoAlbum\PhotoAlbum\bin\Release\Newtonsoft.Json.xml
+D:\VS2017 Projects\PhotoAlbum\PhotoAlbum\obj\Release\PhotoAlbum.exe
+D:\VS2017 Projects\PhotoAlbum\PhotoAlbum\obj\Release\PhotoAlbum.pdb

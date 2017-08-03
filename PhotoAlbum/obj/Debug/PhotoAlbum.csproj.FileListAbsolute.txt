@@ -1,0 +1,9 @@
+D:\VS2017 Projects\PhotoAlbum\PhotoAlbum\bin\Debug\PhotoAlbum.exe.config
+D:\VS2017 Projects\PhotoAlbum\PhotoAlbum\bin\Debug\PhotoAlbum.exe
+D:\VS2017 Projects\PhotoAlbum\PhotoAlbum\bin\Debug\PhotoAlbum.pdb
+D:\VS2017 Projects\PhotoAlbum\PhotoAlbum\obj\Debug\PhotoAlbum.exe
+D:\VS2017 Projects\PhotoAlbum\PhotoAlbum\obj\Debug\PhotoAlbum.pdb
+D:\VS2017 Projects\PhotoAlbum\PhotoAlbum\bin\Debug\Newtonsoft.Json.dll
+D:\VS2017 Projects\PhotoAlbum\PhotoAlbum\bin\Debug\Newtonsoft.Json.xml
+D:\VS2017 Projects\PhotoAlbum\PhotoAlbum\bin\Debug\App.config
+D:\VS2017 Projects\PhotoAlbum\PhotoAlbum\bin\Debug\System.Configuration.dll
