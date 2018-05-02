@@ -41,7 +41,7 @@ namespace PhotoAlbum
 
         #region Private Methods
 
-        private static string CreateAlbumOutput(List<Photo> photos)
+        private string CreateAlbumOutput(List<Photo> photos)
         {
             var stringBuilder = new StringBuilder();
             foreach (var picture in photos)

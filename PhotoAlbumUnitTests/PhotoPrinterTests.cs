@@ -8,34 +8,33 @@ namespace PhotoAlbumUnitTests
     [TestClass]
     public class PhotoPrinterTests
     {
-        private IServiceCaller ServiceCaller;
-        private PhotoPrinter PhotoPrinter;
+        private IServiceCaller _mockServiceCaller = A.Fake<IServiceCaller>();
+        private PhotoPrinter _photoPrinter;
 
         [TestInitialize]
         public void InitializeTests()
         {
-            ServiceCaller = A.Fake<IServiceCaller>();
-            PhotoPrinter = new PhotoPrinter(ServiceCaller);
+            _photoPrinter = new PhotoPrinter(_mockServiceCaller);
         }
 
         [TestMethod]
         public void GetAlbumOutput_ValidCall_CallsGetPhotos()
         {
             // Arrange
-            A.CallTo(() => ServiceCaller.GetPhotos("1")).Returns(new List<Photo>());
+            A.CallTo(() => _mockServiceCaller.GetPhotos("1")).Returns(new List<Photo>());
             // Act
-            PhotoPrinter.GetAlbumOutput("1");
+            _photoPrinter.GetAlbumOutput("1");
             // Assert
-            A.CallTo(() => ServiceCaller.GetPhotos("1")).MustHaveHappened(Repeated.Exactly.Once);
+            A.CallTo(() => _mockServiceCaller.GetPhotos("1")).MustHaveHappened(Repeated.Exactly.Once);
         }
 
         [TestMethod]
         public void GetAlbumOutput_NoPhotosFound_EmptyStringReturned()
         {
             // Arrange
-            A.CallTo(() => ServiceCaller.GetPhotos("1")).Returns(new List<Photo>());
+            A.CallTo(() => _mockServiceCaller.GetPhotos("1")).Returns(new List<Photo>());
             // Act
-            var result = PhotoPrinter.GetAlbumOutput("1");
+            var result = _photoPrinter.GetAlbumOutput("1");
             // Assert
             Assert.AreEqual("", result);
         }
@@ -57,10 +56,10 @@ namespace PhotoAlbumUnitTests
 
             photos.Add(testPhoto1);
 
-            A.CallTo(() => ServiceCaller.GetPhotos("1")).Returns(photos);
+            A.CallTo(() => _mockServiceCaller.GetPhotos("1")).Returns(photos);
 
             // Act
-            var result = PhotoPrinter.GetAlbumOutput("1");
+            var result = _photoPrinter.GetAlbumOutput("1");
             // Assert
             Assert.AreEqual("[1] title1\n", result);
         }
@@ -75,10 +74,10 @@ namespace PhotoAlbumUnitTests
             photos.Add(testPhoto1);
             photos.Add(testPhoto2);
 
-            A.CallTo(() => ServiceCaller.GetPhotos("1")).Returns(photos);
+            A.CallTo(() => _mockServiceCaller.GetPhotos("1")).Returns(photos);
 
             // Act
-            var result = PhotoPrinter.GetAlbumOutput("1");
+            var result = _photoPrinter.GetAlbumOutput("1");
             // Assert
             var lineCount = result.Split('\n').Length - 1;
             Assert.AreEqual(2, lineCount);

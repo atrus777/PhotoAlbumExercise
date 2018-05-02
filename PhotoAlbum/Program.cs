@@ -12,12 +12,11 @@ namespace PhotoAlbum
                 inputAlbumId = null;
                 Console.WriteLine("A valid album ID parameter was not entered.  Displaying all photos.\n");
                 // Added this WriteLine call just to ensure you see this first message in case the command prompt cuts it off
-                // after displaying all the photo IDs and Titles.
+                // after displaying all the photo IDs and titles.
                 Console.WriteLine("Press any key to continue and view all photos.\n");
                 Console.ReadLine();
             }
             
-
             // instantiate printer class
             var photoPrinter = new PhotoPrinter(new ServiceCaller());
 

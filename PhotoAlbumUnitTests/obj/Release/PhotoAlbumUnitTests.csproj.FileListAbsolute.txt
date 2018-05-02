@@ -19,3 +19,5 @@ D:\VS2017 Projects\PhotoAlbum\PhotoAlbumUnitTests\bin\Release\Newtonsoft.Json.xm
 D:\VS2017 Projects\PhotoAlbum\PhotoAlbumUnitTests\obj\Release\PhotoAlbumUnitTests.csprojResolveAssemblyReference.cache
 D:\VS2017 Projects\PhotoAlbum\PhotoAlbumUnitTests\obj\Release\PhotoAlbumUnitTests.dll
 D:\VS2017 Projects\PhotoAlbum\PhotoAlbumUnitTests\obj\Release\PhotoAlbumUnitTests.pdb
+D:\VS2017 Projects\PhotoAlbum\PhotoAlbumUnitTests\obj\Release\PhotoAlbumUnitTests.csproj.CoreCompileInputs.cache
+D:\VS2017 Projects\PhotoAlbum\PhotoAlbumUnitTests\obj\Release\PhotoAlbumUnitTests.csproj.CopyComplete

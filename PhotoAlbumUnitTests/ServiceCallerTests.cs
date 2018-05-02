@@ -6,6 +6,8 @@ using PhotoAlbum;
 
 namespace ServiceCallerTests
 {
+    // TODO: add some unit tests here and for Program.cs, and integration tests around Program.cs
+
     [TestClass]
     public class PhotoAlbumTests
     {
